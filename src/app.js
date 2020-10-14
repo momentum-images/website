@@ -1,7 +1,10 @@
 import React from 'react'
+import Icon from './icon'
 
 export default () => (
   <div className='App'>
-    Hello
+    <div className='spin'>
+      <Icon />
+    </div>
   </div>
 )

@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+
+.spin {
+    margin: auto;
+    margin-top: 25%;
+    width: 200px;
+    height: auto;
+    animation: spin 2s infinite linear;
+}
+
+.spin svg {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes spin {
+    0%  {-webkit-transform: rotate(0deg); width: 200px}
+    50% {-webkit-transform: rotate(180deg); width: 400px}
+    100% {-webkit-transform: rotate(360deg); width: 200px}
+}
