@@ -1,6 +1,6 @@
 import React from 'react'
-import { Switch, Route, Redirect } from 'react-router-dom'
-
+import { Redirect, Route, Switch } from 'react-router-dom'
+import Carousel from './carousel'
 import Home from './home'
 import Portfolio from './portfolio'
 
@@ -11,6 +11,9 @@ export default () => (
         <Switch>
           <Route exact path='/'>
             <Home />
+          </Route>
+          <Route exact path='/portfolio/:portfolio/:file'>
+            <Carousel />
           </Route>
           <Route exact path='/portfolio/:portfolio'>
             <Portfolio />

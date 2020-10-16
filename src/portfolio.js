@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import fetchImages from './fetch-images'
 import Image from './image'
 
@@ -8,9 +8,15 @@ export default () => {
   const [state, setState] = useState({ images: [] })
   const { images } = state
 
+  console.log(portfolio)
+
   const load = async () => {
-    const images = await fetchImages(portfolio)
-    setState({ images })
+    try {
+      const images = await fetchImages(portfolio)
+      setState({ images })
+    } catch (err) {
+      console.log(err)
+    }
   }
 
   useEffect(() => {
@@ -19,12 +25,15 @@ export default () => {
   return (
     <div className='portfolio'>
       <div className='columns is-multiline'>
-        {images.map(({ file, name, size = 'half' }) => (
-          <div key={file} className={`column is-${size}`}>
-            <Image
-              src={`/portfolio/${portfolio}/${file}`}
-              alt={name}
-            />
+        {images.map(({ file, name, size }) => (
+          <div key={file} className='column is-half'>
+            <Link to={`/portfolio/${portfolio}/${file.split('.')[0]}`}>
+              <Image
+                src={`/portfolio/${portfolio}/${file}`}
+                alt={name}
+                size={size}
+              />
+            </Link>
           </div>
         ))}
       </div>

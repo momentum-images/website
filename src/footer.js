@@ -1,11 +1,11 @@
 import React from 'react'
 
 export default () => (
-  <main>
+  <footer>
     <section className='section'>
       <div className='container'>
         FOOTER
       </div>
     </section>
-  </main>
+  </footer>
 )

@@ -1,5 +1,6 @@
 import React from 'react'
 import Icon from './icon'
+import { Link } from 'react-router-dom'
 
 export default () => {
   return (
@@ -21,7 +22,9 @@ export default () => {
                 </div>
               </div>
               <div className='column'>
-                <Icon />
+                <Link to='/'>
+                  <Icon />
+                </Link>
               </div>
               <div className='column'>
                 <a>SM1</a>
