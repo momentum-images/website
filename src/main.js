@@ -1,8 +1,8 @@
 import React from 'react'
 import { Redirect, Route, Switch } from 'react-router-dom'
-import Carousel from './carousel'
 import Home from './home'
 import Portfolio from './portfolio'
+import Contact from './contact'
 
 export default () => (
   <main>
@@ -12,14 +12,14 @@ export default () => (
           <Route exact path='/'>
             <Home />
           </Route>
-          <Route exact path='/portfolio/:portfolio/:file'>
-            <Carousel />
-          </Route>
           <Route exact path='/portfolio/:portfolio'>
             <Portfolio />
           </Route>
           <Route exact path='/portfolio'>
             <Redirect to='/' />
+          </Route>
+          <Route exact path='/contact'>
+            <Contact />
           </Route>
         </Switch>
       </div>

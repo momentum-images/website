@@ -15,10 +15,8 @@ export default () => {
             <div className='columns'>
               <div className='column'>
                 <div className='hero-links'>
-                  <a href='/baco'>LINK 1</a>
-                  <a href='/baco'>LINK 1</a>
-                  <a href='/baco'>LINK 1</a>
-                  <a href='/baco'>LINK 1</a>
+                  <Link to='/about'>ABOUT</Link>
+                  <Link to='/contact'>CONTACT</Link>
                 </div>
               </div>
               <div className='column'>
@@ -27,8 +25,8 @@ export default () => {
                 </Link>
               </div>
               <div className='column'>
-                <a>SM1</a>
-                <a>SM2</a>
+                <a href='https://www.instagram.com/momentum.images'>INSTA</a>
+                <a href='https://www.facebook.com/momentum.images.uk'>FB</a>
               </div>
             </div>
           </div>

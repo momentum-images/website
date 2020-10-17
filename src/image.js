@@ -5,15 +5,15 @@ import Loading from './loading'
 
 const Placeholder = ({ ref }) => <div ref={ref} className='image is-1by1 placeholder'><Loading /></div>
 
-export default ({ src, alt, size = 'portrait' }) => (
+export default ({ src, alt, orientation }) => (
   <LazyImage
-    className={`image is-${size === 'portrait' ? '4by5' : '1by1'}`}
+    className={`image is-${orientation === 'portrait' ? '4by5' : '16by9'}`}
     src={src}
     alt={alt}
     debounceDurationMs={400}
     placeholder={Placeholder}
     actual={({ imageProps }) => (
-      <img {...imageProps} className={`image is-${size === 'portrait' ? '4by5' : '1by1'} is-loaded`} />
+      <img {...imageProps} className={`image is-${orientation === 'portrait' ? '4by5' : '16by9'} is-loaded`} />
     )}
   />
 )

@@ -69,20 +69,59 @@ body {
   stroke: white;
 }
 
-.portfolio-link {
+.footer {
+  background: transparent;
+  background: linear-gradient(
+    0deg,
+    rgba(10, 10, 10, 1) 0%,
+    rgba(255, 255, 255, 0.1) 85%,
+    rgba(10, 10, 10, 0.1) 100%
+  );
+}
+
+.footer-link {
+  height: 120px;
+  margin-bottom: 2em;
+}
+
+.footer-link .button {
+  height: 100%;
+  width: 100%;
+  letter-spacing: 1px;
+  padding-left: 2em !important;
+  color: white;
+  background-color: rgba(50, 50, 50, 1);
+  border: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.footer-link .button .icon {
+  margin-right: 0.4em !important;
+  font-size: 40px;
+}
+
+.footer-link .button:hover,
+.footer-link .button:focus,
+.footer-link .button:active {
+  color: white;
+  background-color: rgba(70, 70, 70, 1);
+}
+
+.home-link {
   position: relative;
   max-height: 300px;
   overflow: hidden;
   margin-bottom: 30px;
   cursor: pointer;
+  border-radius: 4px;
 }
 
-.portfolio-link img {
+.home-link img {
   transform: translateY(-50%);
   transition: transform 0.2s ease-in-out;
 }
 
-.portfolio-link-label {
+.home-link-label {
   color: white;
   position: absolute;
   width: 100%;
@@ -95,11 +134,15 @@ body {
   letter-spacing: 0.3rem;
 }
 
-.portfolio-link:hover img {
+.home-link:hover img,
+.home-link:focus img,
+.home-link:active img {
   transform: translateY(-50%) scale(1.2);
 }
 
-.portfolio-link:hover .portfolio-link-label {
+.home-link:hover .home-link-label,
+.home-link:focus .home-link-label,
+.home-link:active .home-link-label {
   opacity: 0.1;
   font-size: 72px;
   letter-spacing: 0.5rem;
