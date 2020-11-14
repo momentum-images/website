@@ -5,7 +5,7 @@ import { faFilePdf } from '@fortawesome/free-regular-svg-icons'
 export default () => (
   <div className='tcs is-lato'>
     <p className='content'>By using any of the images produced by Momentum Images or Melanie Preston you agree to the Terms and Conditions</p>
-    <a href='https://momentumimages.co.uk/tcs.pdf'>
+    <a href='https://momentumimages.co.uk/momentumimages-terms-and-contditions.pdf' target='_blank' rel='noopener noreferrer'>
       <span className='icon'>
         <FontAwesomeIcon icon={faFilePdf} />
       </span>

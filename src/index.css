@@ -127,8 +127,16 @@ a {
   margin-right: 15px;
 }
 
-.navbar-item .icon {
-  margin-right: 0.7rem;
+.navber-item-icon {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+.navber-item-icon:hover,
+.navber-item-icon:active,
+.navber-item-icon:focus {
+  color: white;
+  opacity: 1;
 }
 
 .navbar-link:not(.is-arrowless)::after {
@@ -141,8 +149,6 @@ a {
 .navbar-item:active .navbar-link:not(.is-arrowless)::after {
   opacity: 1;
 }
-
-
 
 /* FOOTER */
 

@@ -116,18 +116,16 @@ export default () => {
             </div>
             <div className={`navbar-menu is-${active ? 'active' : 'inactive'}`}>
               <div className='navbar-end'>
-                <div className='navbar-item'>
-                  <a href='https://www.facebook.com/momentum.images.uk' target='_blank' rel='noopener noreferrer'>
-                    <span className='icon'>
-                      <FontAwesomeIcon icon={faFacebookF} />
-                    </span>
-                  </a>
-                  <a href='https://www.instagram.com/momentum.images' target='_blank' rel='noopener noreferrer'>
-                    <span className='icon'>
-                      <FontAwesomeIcon icon={faInstagram} />
-                    </span>
-                  </a>
-                </div>
+                <a className='navber-link' href='https://www.facebook.com/momentum.images.uk' target='_blank' rel='noopener noreferrer'>
+                  <span className='icon'>
+                    <FontAwesomeIcon icon={faFacebookF} />
+                  </span>
+                </a>
+                <a className='navber-link' href='https://www.instagram.com/momentum.images' target='_blank' rel='noopener noreferrer'>
+                  <span className='icon'>
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </span>
+                </a>
                 <Link to='/' className='navbar-item' onClick={() => { setActive(false) }}>
                   Home
                 </Link>
@@ -147,7 +145,6 @@ export default () => {
                     </Link>
                   </div>
                 </div>
-
                 <Link to='/about' className='navbar-item' onClick={() => { setActive(false) }}>
                   About
                 </Link>
