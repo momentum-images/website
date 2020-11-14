@@ -15,9 +15,9 @@ const RouteHead = ({
     <MetaData
       title={title}
       description={description}
-      image={src}
+      image={`${src}-meta.jpg`}
     />
-    <img src={src} alt={description} />
+    <img src={`${src}-title.jpg`} alt={description} />
   </>
 )
 
@@ -40,63 +40,63 @@ export default () => {
             <RouteHead
               title='Momentum Images - About'
               description='Learn a bit about Momentum Images'
-              src='/about.jpg'
+              src='about'
             />
           </Route>
           <Route exact path='/tcs'>
             <RouteHead
               title="Momentum Images - T&C's"
               description='Learn a bit about Momentum Images'
-              src='/tcs.jpg'
+              src='tcs'
             />
           </Route>
           <Route exact path='/contact'>
             <RouteHead
               title="Momentum Images - Contact"
               description='Learn a bit about Momentum Images'
-              src='/contact.jpg'
+              src='contact'
             />
           </Route>
           <Route exact path='/portfolio/dance'>
             <RouteHead
               title="Momentum Images - Dance Portfolio"
               description='Learn a bit about Momentum Images'
-              src='/dance.jpg'
+              src='portfolio_dance'
             />
           </Route>
           <Route exact path='/portfolio/family'>
             <RouteHead
               title="Momentum Images - Family Portfolio"
               description='Learn a bit about Momentum Images'
-              src='/family.jpg'
+              src='portfolio_family'
             />
           </Route>
           <Route exact path='/portfolio/portrait'>
             <RouteHead
               title="Momentum Images - Portrait Portfolio"
               description='Learn a bit about Momentum Images'
-              src='/portrait.jpg'
+              src='portfolio_portrait'
             />
           </Route>
           <Route exact path='/'>
             <RouteHead
               title="Momentum Images"
               description='Learn a bit about Momentum Images'
-              src='/home.jpg'
+              src='home'
             />
           </Route>
           <Route exact path='/thanks'>
             <RouteHead
               title="Momentum Images - Thanks"
               description='Learn a bit about Momentum Images'
-              src='/home.jpg'
+              src='home'
             />
           </Route>
           <Route>
             <RouteHead
               title="404 Not Found"
               description='Learn a bit about Momentum Images'
-              src='/home.jpg'
+              src='not_found'
             />
           </Route>
         </Switch>
