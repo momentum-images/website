@@ -8,14 +8,13 @@ export default () => {
   const [state, setState] = useState({ images: [] })
   const { images } = state
 
-  const load = async () => {
-    const images = await fetchImages(portfolio)
-    setState({ images })
-  }
-
   useEffect(() => {
+    const load = async () => {
+      const images = await fetchImages(portfolio)
+      setState({ images })
+    }
     if (images.length === 0) load()
-  }, [portfolio, images, fetchImages])
+  }, [portfolio, images])
   return (
     <div className='portfolio'>
       <div className='columns is-multiline'>

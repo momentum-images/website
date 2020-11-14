@@ -13,7 +13,7 @@ export default ({ src, alt, orientation }) => (
     debounceDurationMs={400}
     placeholder={Placeholder}
     actual={({ imageProps }) => (
-      <img {...imageProps} className={`image is-${orientation === 'portrait' ? '4by5' : '16by9'} is-loaded`} />
+      <img alt='Placeholder description' {...imageProps} className={`image is-${orientation === 'portrait' ? '4by5' : '16by9'} is-loaded`} />
     )}
   />
 )

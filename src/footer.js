@@ -1,34 +1,39 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUserCircle, faEnvelopeOpen } from '@fortawesome/free-regular-svg-icons'
+import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
-export default () => {
-  const history = useHistory()
-  return (
-    <footer className='footer'>
-      <section className='section'>
-        <div className='container'>
-          <ul>
-            <li className='footer-link'>
-              <button className='button is-white is-large' onClick={() => { history.push('/contact') }}>
+export default () => (
+  <footer className='footer is-lato'>
+    <section className='section'>
+      <div className='container'>
+        <div className='level'>
+          <div className='level-left'>
+            <div className='level-item'>
+              Melanie Preston
+            </div>
+            <div className='level-item is-hidden-touch'>
+              -
+            </div>
+            <div className='level-item'>
+              Momentum Images 2020
+            </div>
+          </div>
+          <div className='level-left'>
+            <div className='level-item'>
+              <a href='https://www.facebook.com/momentum.images.uk' target='_blank' rel='noopener noreferrer'>
                 <span className='icon'>
-                  <FontAwesomeIcon icon={faEnvelopeOpen} />
+                  <FontAwesomeIcon icon={faFacebookF} />
                 </span>
-                <span>CONTACT</span>
-              </button>
-            </li>
-            <li className='footer-link'>
-              <button className='button is-white is-large' onClick={() => { history.push('/about') }}>
+              </a>
+              <a href='https://www.instagram.com/momentum.images' target='_blank' rel='noopener noreferrer'>
                 <span className='icon'>
-                  <FontAwesomeIcon icon={faUserCircle} />
+                  <FontAwesomeIcon icon={faInstagram} />
                 </span>
-                <span>ABOUT</span>
-              </button>
-            </li>
-          </ul>
+              </a>
+            </div>
+          </div>
         </div>
-      </section>
-    </footer>
-  )
-}
+      </div>
+    </section>
+  </footer>
+)
