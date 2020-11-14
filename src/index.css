@@ -104,12 +104,22 @@ a {
 .navbar-item:hover,
 .navbar-item:focus,
 .navbar-item:active {
-  opacity: 1;
+  opacity: 1 !important;
+}
+
+.navbar-dropdown {
+  background-color: #0a0a0a;
+}
+
+.navbar-dropdown .navbar-item:hover {
+  opacity: 1 !important;
 }
 
 .navbar-item,
+.navbar-link,
 .navbar-menu {
   background-color: transparent !important;
+  background: transparent !important;
 }
 
 .navbar-end {
