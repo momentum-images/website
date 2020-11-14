@@ -140,7 +140,7 @@ export default () => {
                     <Link className='navbar-item' to='/portfolio/family'>
                       Family
                     </Link>
-                    <Link className='navbar-item' to='/portfolio/dance'>
+                    <Link className='navbar-item' to='/portfolio/portrait'>
                       Portait
                     </Link>
                   </div>
