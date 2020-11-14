@@ -17,7 +17,7 @@ const RouteHead = ({
       description={description}
       image={`${src}-meta.jpg`}
     />
-    <img src={`${src}-title.jpg`} alt={description} />
+    <img src={`/${src}-title.jpg`} alt={description} />
   </>
 )
 
@@ -116,12 +116,12 @@ export default () => {
             </div>
             <div className={`navbar-menu is-${active ? 'active' : 'inactive'}`}>
               <div className='navbar-end'>
-                <a className='navber-link' href='https://www.facebook.com/momentum.images.uk' target='_blank' rel='noopener noreferrer'>
+                <a className='navbar-item is-inline-block' href='https://www.facebook.com/momentum.images.uk' target='_blank' rel='noopener noreferrer'>
                   <span className='icon'>
                     <FontAwesomeIcon icon={faFacebookF} />
                   </span>
                 </a>
-                <a className='navber-link' href='https://www.instagram.com/momentum.images' target='_blank' rel='noopener noreferrer'>
+                <a className='navbar-item is-inline-block' href='https://www.instagram.com/momentum.images' target='_blank' rel='noopener noreferrer'>
                   <span className='icon'>
                     <FontAwesomeIcon icon={faInstagram} />
                   </span>
