@@ -30,8 +30,12 @@
     "lint": "eslint src",
     "start": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
     "build": "SKIP_PREFLIGHT_CHECK=true react-scripts build",
-    "postbuild": "react-snap",
+    "sitemap": "node scripts/create-sitemap.js",
+    "generate-images": "node scripts/generate-images.js",
+    "prebuild": "npm run generate-images",
+    "postbuild": "react-snap && npm run sitemap",
     "gh-pages": "gh-pages -d build",
+    "deploy": "npm run build && npm run gh-pages",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
