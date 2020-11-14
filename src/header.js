@@ -4,6 +4,22 @@ import Brand from './brand'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import MetaData from './meta-data'
+
+const RouteHead = ({
+  title,
+  description,
+  src
+}) => (
+  <>
+    <MetaData
+      title={title}
+      description={description}
+      image={src}
+    />
+    <img src={src} alt={description} />
+  </>
+)
 
 export default () => {
   const [active, setActive] = useState(false)
@@ -21,25 +37,67 @@ export default () => {
         <div className='hero-image-shadow' />
         <Switch>
           <Route exact path='/about'>
-            <img src='/about.jpg' alt='Funny baby' />
+            <RouteHead
+              title='Momentum Images - About'
+              description='Learn a bit about Momentum Images'
+              src='/about.jpg'
+            />
           </Route>
           <Route exact path='/tcs'>
-            <img src='/tcs.jpg' alt='Ghost on a bench in The Lakes' />
+            <RouteHead
+              title="Momentum Images - T&C's"
+              description='Learn a bit about Momentum Images'
+              src='/tcs.jpg'
+            />
           </Route>
           <Route exact path='/contact'>
-            <img src='/contact.jpg' alt='Woman at Rydal Caves' />
+            <RouteHead
+              title="Momentum Images - Contact"
+              description='Learn a bit about Momentum Images'
+              src='/contact.jpg'
+            />
           </Route>
           <Route exact path='/portfolio/dance'>
-            <img src='/dance.jpg' alt='Leaping daner in The Lakes' />
+            <RouteHead
+              title="Momentum Images - Dance Portfolio"
+              description='Learn a bit about Momentum Images'
+              src='/dance.jpg'
+            />
           </Route>
           <Route exact path='/portfolio/family'>
-            <img src='/family.jpg' alt='Mum and baby in The Lakes' />
+            <RouteHead
+              title="Momentum Images - Family Portfolio"
+              description='Learn a bit about Momentum Images'
+              src='/family.jpg'
+            />
           </Route>
           <Route exact path='/portfolio/portrait'>
-            <img src='/portrait.jpg' alt='Woman in The Lakes' />
+            <RouteHead
+              title="Momentum Images - Portrait Portfolio"
+              description='Learn a bit about Momentum Images'
+              src='/portrait.jpg'
+            />
+          </Route>
+          <Route exact path='/'>
+            <RouteHead
+              title="Momentum Images"
+              description='Learn a bit about Momentum Images'
+              src='/home.jpg'
+            />
+          </Route>
+          <Route exact path='/thanks'>
+            <RouteHead
+              title="Momentum Images - Thanks"
+              description='Learn a bit about Momentum Images'
+              src='/home.jpg'
+            />
           </Route>
           <Route>
-            <img src='/home.jpg' alt='Woman at Rydal Caves' />
+            <RouteHead
+              title="404 Not Found"
+              description='Learn a bit about Momentum Images'
+              src='/home.jpg'
+            />
           </Route>
         </Switch>
       </div>

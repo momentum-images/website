@@ -27,7 +27,7 @@ export default () => {
     form: {}
   })
 
-  const validate = (key = null, value) => {
+  const validate = (value, key = null) => {
     if (key !== null) form[key] = value
     const newErrors = {}
     const validation = check(form)
@@ -82,7 +82,7 @@ export default () => {
             className='input'
             type='text'
             placeholder='Name'
-            onChange={(evt) => { validate('name', evt.target.value) }}
+            onChange={(evt) => { validate(evt.target.value, 'name') }}
           />
           {'name' in (form || {}) && 'name' in errors && <p className='contact-message has-text-danger'>{errors.name}</p>}
         </div>
@@ -96,7 +96,7 @@ export default () => {
             placeholder='Email'
             name='email'
             id='email'
-            onChange={(evt) => { validate('email', evt.target.value) }}
+            onChange={(evt) => { validate(evt.target.value, 'email') }}
           />
           {'email' in (form || {}) && 'email' in errors && <p className='contact-message has-text-danger'>{errors.email}</p>}
         </div>
@@ -109,7 +109,7 @@ export default () => {
             id='message'
             className='textarea'
             placeholder='Textarea'
-            onChange={(evt) => { validate('message', evt.target.value) }}
+            onChange={(evt) => { validate(evt.target.value, 'message') }}
           />
           {'message' in (form || {}) && 'message' in errors && <p className='contact-message has-text-danger'>{errors.message}</p>}
         </div>

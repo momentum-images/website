@@ -1,11 +1,16 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import { LazyImage } from 'react-lazy-images'
 import Loading from './loading'
 
 const Placeholder = ({ ref }) => <div ref={ref} className='image is-1by1 placeholder'><Loading /></div>
 
-export default ({ src, alt, orientation }) => (
+Placeholder.propTypes = {
+  ref: PropTypes.any.isRequired
+}
+
+const Image = ({ src, alt, orientation }) => (
   <LazyImage
     className={`image is-${orientation === 'portrait' ? '4by5' : '16by9'}`}
     src={src}
@@ -17,3 +22,11 @@ export default ({ src, alt, orientation }) => (
     )}
   />
 )
+
+Image.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  orientation: PropTypes.string.isRequired
+}
+
+export default Image

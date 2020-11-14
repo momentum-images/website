@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default () => (
+  <>
   <div>
     <ul>
       <li className='home-link is-oswald'>
@@ -30,4 +31,5 @@ export default () => (
       </li>
     </ul>
   </div>
+  </>
 )
