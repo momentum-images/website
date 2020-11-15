@@ -1,20 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { useParams } from 'react-router-dom'
 import fetchImages from './fetch-images'
 import Image from './image'
 
 export default () => {
   const { portfolio } = useParams()
-  const [state, setState] = useState({ images: [] })
-  const { images } = state
 
-  useEffect(() => {
-    const load = async () => {
-      const images = await fetchImages(portfolio)
-      setState({ images })
-    }
-    if (images.length === 0) load()
-  }, [portfolio, images])
+  const images = fetchImages(portfolio)
+
   return (
     <div className='portfolio'>
       <div className='columns is-multiline'>

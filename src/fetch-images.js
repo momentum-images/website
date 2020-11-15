@@ -1,6 +1,6 @@
 import data from './data.json'
 
-export default async (portfolio) => {
+export default (portfolio) => {
   const images = data[portfolio]
     .map(file => {
       const [index, orientation, name] = file.split('_')
