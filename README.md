@@ -24,7 +24,7 @@ Each portfolio has a folder in [portfolio](https://github.com/momentum-images/mo
 
 You can have `portrait` which is `4x5` or `landscape` which is `16x9`
 
-You should have `1 landscape` and `2 portrait` and they will automatically arrange so there isn't any gap
+**Rule of thumg** You should have `1 landscape` and `2 portrait` or `2/4 portraits` of a photoshoot
 
 **DO NOT** rename the images in order to get a neat indexing going on. If you delete an image just continue from the last number in the list. If you want to change the order, ask as it will be easier than working it out on your own.
 

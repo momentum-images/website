@@ -39,63 +39,63 @@ export default () => {
           <Route exact path='/about'>
             <RouteHead
               title='Momentum Images - About'
-              description='Learn a bit about Momentum Images'
+              description='Learn more about Momentum Images from who we are to what we do'
               src='about'
             />
           </Route>
           <Route exact path='/tcs'>
             <RouteHead
               title="Momentum Images - T&C's"
-              description='Learn a bit about Momentum Images'
+              description='The outline of our Terms and Conditions for Momentum Images'
               src='tcs'
             />
           </Route>
           <Route exact path='/contact'>
             <RouteHead
               title='Momentum Images - Contact'
-              description='Learn a bit about Momentum Images'
+              description='Get in touch via email, Facebook or Instagram with us at Momentum Images'
               src='contact'
             />
           </Route>
           <Route exact path='/portfolio/dance'>
             <RouteHead
               title='Momentum Images - Dance Portfolio'
-              description='Learn a bit about Momentum Images'
+              description='Our greatest and latest dance photos taken by Momentum Images with the backdrop of the Lake District'
               src='portfolio_dance'
             />
           </Route>
           <Route exact path='/portfolio/family'>
             <RouteHead
               title='Momentum Images - Family Portfolio'
-              description='Learn a bit about Momentum Images'
+              description='Our greatest and latest family photos taken by Momentum Images with the backdrop of the Lake District'
               src='portfolio_family'
             />
           </Route>
           <Route exact path='/portfolio/portrait'>
             <RouteHead
               title='Momentum Images - Portrait Portfolio'
-              description='Learn a bit about Momentum Images'
+              description='Our greatest and latest portrait photos taken by Momentum Images with the backdrop of the Lake District'
               src='portfolio_portrait'
             />
           </Route>
           <Route exact path='/'>
             <RouteHead
               title='Momentum Images'
-              description='Learn a bit about Momentum Images'
+              description='Momentum Images creates high-quality images in the inspirational backdrop of the Lake District'
               src='home'
             />
           </Route>
           <Route exact path='/thanks'>
             <RouteHead
               title='Momentum Images - Thanks'
-              description='Learn a bit about Momentum Images'
+              description='Thank you for getting in touch, we will get back to you as soon as possible'
               src='home'
             />
           </Route>
           <Route>
             <RouteHead
               title='404 Not Found'
-              description='Learn a bit about Momentum Images'
+              description='Momentum Images creates high-quality images in the inspirational backdrop of the Lake District'
               src='not_found'
             />
           </Route>

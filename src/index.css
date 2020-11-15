@@ -383,3 +383,31 @@ a {
 .tcs a:active {
   color: rgb(150, 150, 150);
 }
+
+/* COOKIES */
+
+.accept-cookies {
+  border-top: solid 1px white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(50, 50, 50);
+  padding: 30px;
+}
+
+.accept-cookies p {
+  font-size: 22px;
+  color: white;
+}
+
+.accept-cookies .columns {
+  align-items: center;
+}
+
+.accept-cookies .buttons {
+  display: flex;
+}
+
+.accept-cookies button {
+  flex-grow: 1;
+}
