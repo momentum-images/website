@@ -52,49 +52,49 @@ export default () => {
           </Route>
           <Route exact path='/contact'>
             <RouteHead
-              title="Momentum Images - Contact"
+              title='Momentum Images - Contact'
               description='Learn a bit about Momentum Images'
               src='contact'
             />
           </Route>
           <Route exact path='/portfolio/dance'>
             <RouteHead
-              title="Momentum Images - Dance Portfolio"
+              title='Momentum Images - Dance Portfolio'
               description='Learn a bit about Momentum Images'
               src='portfolio_dance'
             />
           </Route>
           <Route exact path='/portfolio/family'>
             <RouteHead
-              title="Momentum Images - Family Portfolio"
+              title='Momentum Images - Family Portfolio'
               description='Learn a bit about Momentum Images'
               src='portfolio_family'
             />
           </Route>
           <Route exact path='/portfolio/portrait'>
             <RouteHead
-              title="Momentum Images - Portrait Portfolio"
+              title='Momentum Images - Portrait Portfolio'
               description='Learn a bit about Momentum Images'
               src='portfolio_portrait'
             />
           </Route>
           <Route exact path='/'>
             <RouteHead
-              title="Momentum Images"
+              title='Momentum Images'
               description='Learn a bit about Momentum Images'
               src='home'
             />
           </Route>
           <Route exact path='/thanks'>
             <RouteHead
-              title="Momentum Images - Thanks"
+              title='Momentum Images - Thanks'
               description='Learn a bit about Momentum Images'
               src='home'
             />
           </Route>
           <Route>
             <RouteHead
-              title="404 Not Found"
+              title='404 Not Found'
               description='Learn a bit about Momentum Images'
               src='not_found'
             />
