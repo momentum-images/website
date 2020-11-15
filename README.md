@@ -2,6 +2,8 @@
 
 This is the code for the momentum images website
 
+[![Build Status](https://travis-ci.org/momentum-images/website.svg?branch=master)](https://travis-ci.org/momentum-images/website)
+
 ## Social Links
 
 [Instagram](https://www.instagram.com/momentum.images)
