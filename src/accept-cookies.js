@@ -30,20 +30,20 @@ export default () => {
   return show
     ? (
       <div className='accept-cookies'>
-        <div className='columns'>
-          <div className='column is-two-thirds'>
+        <div className='level'>
+          <div className='level-item'>
             <p className='is-lato'>This website uses cookies to enhance the user experience.</p>
           </div>
-          <div className='column is-on-third'>
+          <div className='level-item'>
             <div className='buttons'>
               <button
-                className='button is-danger is-large is-oswald'
+                className='button is-danger is-oswald'
                 onClick={reject}
               >
                 Reject
               </button>
               <button
-                className='button is-warning is-large is-oswald'
+                className='button is-warning is-oswald'
                 onClick={accept}
               >
                 Accept

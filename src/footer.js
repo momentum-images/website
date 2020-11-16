@@ -1,7 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import LikeButton from './like-button'
 
 export default () => (
   <footer className='footer is-lato'>
@@ -34,7 +33,6 @@ export default () => (
             </div>
           </div>
         </div>
-        <LikeButton />
       </div>
     </section>
   </footer>
