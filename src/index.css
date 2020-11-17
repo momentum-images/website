@@ -31,6 +31,20 @@ a {
   width: 1px; 
 }
 
+/* Lazy Loading */
+
+.lazy-container {
+  display: flex;
+  
+}
+
+.lazy-container svg {
+  margin: auto;
+  max-height: 300px;
+  width: auto;
+  padding: 40px;
+}
+
 /* HEADER */
 
 .hero {

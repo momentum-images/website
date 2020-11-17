@@ -55,7 +55,7 @@
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
   <script>
-    if (navigator.userAgent !== 'ReactSnap') {
+    if ('%NODE_ENV%' !== 'production' || navigator.userAgent !== 'ReactSnap') {
       window.fbAsyncInit = function () {
         FB.init({
           xfbml: true,
