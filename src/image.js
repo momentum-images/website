@@ -18,7 +18,7 @@ const Image = ({ src, alt, orientation = null, lazy = true }) => {
     return (
       <LazyImage
         className={className}
-        src={src}
+        src={`/images${src}.jpg`}
         alt={alt}
         debounceDurationMs={200}
         placeholder={Placeholder}

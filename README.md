@@ -31,3 +31,15 @@ You can have `portrait` which is `4x5` or `landscape` which is `16x9`
 **DO NOT** rename the images in order to get a neat indexing going on. If you delete an image just continue from the last number in the list. If you want to change the order, ask as it will be easier than working it out on your own.
 
 Use this website for compressing images <https://compressjpeg.com>
+
+
+## Resolutions
+mobile 768px
+tablet 1023px
+desktop 1215px
+widescreen 1407px
+full-hd
+
+## TODO
+
+* resize images

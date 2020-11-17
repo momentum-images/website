@@ -15,6 +15,7 @@ export default () => {
           return (
             <div key={file} className={`column is-${size}`}>
               <Image
+                // lazy={false}
                 src={`/portfolio/${portfolio}/${file}`}
                 alt={name}
                 orientation={orientation}
