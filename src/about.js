@@ -1,10 +1,11 @@
 import React from 'react'
+import Image from './image'
 
 export default () => (
   <div className='columns'>
     <div className='column is-one-third'>
       <figure className='image is-4by5'>
-        <img src='/mel.jpg' alt='Melanie Preston' />
+        <Image src='mel' alt='Melanie Preston' lazy={false} />
       </figure>
     </div>
     <div className='colmn'>

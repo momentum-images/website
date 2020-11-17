@@ -5,6 +5,7 @@ import Brand from './brand'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import MetaData from './meta-data'
+import Image from './image'
 
 const RouteHead = ({
   path,
@@ -17,9 +18,9 @@ const RouteHead = ({
       path={path}
       title={title}
       description={description}
-      image={`/${src}-meta.jpg`}
+      image={`/images/${src}-meta.jpg`}
     />
-    <img src={`/${src}-title.jpg`} alt={description} />
+    <Image src={`/${src}-title`} alt={description} lazy={false} />
   </>
 )
 
