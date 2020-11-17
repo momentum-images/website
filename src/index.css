@@ -72,14 +72,8 @@ a {
 }
 
 .navbar {
-  background: rgba(10, 10, 10, 0.8) !important;
-  background: linear-gradient(
-    180deg,
-    rgba(10, 10, 10, 1) 33%,
-    rgba(10, 10, 10, 0.9) 66%,
-    rgba(255, 255, 255, 0) 100%
-  ) !important;
-  padding: 30px 0;
+  background: rgba(10, 10, 10, .6) !important;
+  padding: 16px 0;
 }
 
 .navbar-burger {
@@ -102,21 +96,6 @@ a {
 
 .navbar-burger span:nth-child(3) {
   top: calc(50% + 4px);
-}
-
-.hero-image-shadow {
-  position: absolute;
-  z-index: 2;
-  background: transparent;
-  background: linear-gradient(
-    0deg,
-    rgba(10, 10, 10, 1) 0%,
-    rgba(10, 10, 10, 0.9) 10%,
-    rgba(255, 255, 255, 0) 50%
-  );
-  width: 100%;
-  height: 100%;
-  top: 0;
 }
 
 .navbar-link {

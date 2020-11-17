@@ -37,7 +37,6 @@ export default () => {
   return (
     <section className='hero is-black is-oswald'>
       <div className='image is-3by1'>
-        <div className='hero-image-shadow' />
         <Switch>
           <Route exact path='/about'>
             <RouteHead
