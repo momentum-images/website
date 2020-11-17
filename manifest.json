@@ -2,8 +2,13 @@
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "48x48",
       "type": "image/x-icon"
+    },
+    {
+      "src": "64.png",
+      "type": "image/png",
+      "sizes": "64x64"
     },
     {
       "src": "72.png",
