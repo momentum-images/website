@@ -11,7 +11,7 @@ export default () => (
             <div className='level-item'>
               Melanie Preston
             </div>
-            <div className='level-item is-hidden-touch'>
+            <div className='level-item sr-only-touch'>
               -
             </div>
             <div className='level-item'>
@@ -21,12 +21,14 @@ export default () => (
           <div className='level-left'>
             <div className='level-item'>
               <a href='https://www.facebook.com/momentum.images.uk' target='_blank' rel='noopener noreferrer'>
-                <span className='icon'>
+                <span className='sr-only'>Facebook</span>
+                <span className='icon' aria-hidden='true'>
                   <FontAwesomeIcon icon={faFacebookF} />
                 </span>
               </a>
               <a href='https://www.instagram.com/momentum.images' target='_blank' rel='noopener noreferrer'>
-                <span className='icon'>
+                <span className='sr-only'>Instagram</span>
+                <span className='icon' aria-hidden='true'>
                   <FontAwesomeIcon icon={faInstagram} />
                 </span>
               </a>

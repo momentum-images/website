@@ -7,15 +7,17 @@ import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import MetaData from './meta-data'
 
 const RouteHead = ({
+  path,
   title,
   description,
   src
 }) => (
   <>
     <MetaData
+      path={path}
       title={title}
       description={description}
-      image={`${src}-meta.jpg`}
+      image={`/${src}-meta.jpg`}
     />
     <img src={`/${src}-title.jpg`} alt={description} />
   </>
@@ -38,6 +40,7 @@ export default () => {
         <Switch>
           <Route exact path='/about'>
             <RouteHead
+              path='/about'
               title='Momentum Images - About'
               description='Learn more about Momentum Images from who we are to what we do'
               src='about'
@@ -45,6 +48,7 @@ export default () => {
           </Route>
           <Route exact path='/tcs'>
             <RouteHead
+              path='/tcs'
               title="Momentum Images - T&C's"
               description='The outline of our Terms and Conditions for Momentum Images'
               src='tcs'
@@ -52,6 +56,7 @@ export default () => {
           </Route>
           <Route exact path='/contact'>
             <RouteHead
+              path='/contact'
               title='Momentum Images - Contact'
               description='Get in touch via email, Facebook or Instagram with us at Momentum Images'
               src='contact'
@@ -59,6 +64,7 @@ export default () => {
           </Route>
           <Route exact path='/portfolio/dance'>
             <RouteHead
+              path='/portfolio/dance'
               title='Momentum Images - Dance Portfolio'
               description='Our greatest and latest dance photos taken by Momentum Images with the backdrop of the Lake District'
               src='portfolio_dance'
@@ -66,6 +72,7 @@ export default () => {
           </Route>
           <Route exact path='/portfolio/family'>
             <RouteHead
+              path='/portfolio/family'
               title='Momentum Images - Family Portfolio'
               description='Our greatest and latest family photos taken by Momentum Images with the backdrop of the Lake District'
               src='portfolio_family'
@@ -73,6 +80,7 @@ export default () => {
           </Route>
           <Route exact path='/portfolio/portrait'>
             <RouteHead
+              path='/portfolio/portrait'
               title='Momentum Images - Portrait Portfolio'
               description='Our greatest and latest portrait photos taken by Momentum Images with the backdrop of the Lake District'
               src='portfolio_portrait'
@@ -80,6 +88,7 @@ export default () => {
           </Route>
           <Route exact path='/'>
             <RouteHead
+              path='/'
               title='Momentum Images'
               description='Momentum Images creates high-quality images in the inspirational backdrop of the Lake District'
               src='home'
@@ -87,6 +96,7 @@ export default () => {
           </Route>
           <Route exact path='/thanks'>
             <RouteHead
+              path='/thanks'
               title='Momentum Images - Thanks'
               description='Thank you for getting in touch, we will get back to you as soon as possible'
               src='home'
@@ -94,6 +104,7 @@ export default () => {
           </Route>
           <Route>
             <RouteHead
+              path='/'
               title='404 Not Found'
               description='Momentum Images creates high-quality images in the inspirational backdrop of the Lake District'
               src='not_found'
@@ -107,6 +118,7 @@ export default () => {
             <div className='navbar-brand'>
               <Link to='/' className='navbar-item'>
                 <Brand />
+                <span className='sr-only'>Home</span>
               </Link>
               <span className='navbar-burger burger' onClick={() => { setActive(!active) }}>
                 <span />
