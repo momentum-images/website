@@ -1,0 +1,1 @@
+{"version":3,"sources":["not-found.js"],"names":[],"mappings":"gJAEe,4BACb","file":"static/js/9.e01c5895.chunk.js","sourcesContent":["import React from 'react'\n\nexport default () => (\n  <div>\n    Not Found\n  </div>\n)\n"],"sourceRoot":""}
