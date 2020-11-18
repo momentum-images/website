@@ -72,7 +72,6 @@ export default () => {
         if (valid) submit()
       }}
     >
-      <h1 className='title'>Contact Momentum Images</h1>
       <div className='field'>
         <label className='label' htmlFor='name'>Name</label>
         <div className='control'>
@@ -120,10 +119,10 @@ export default () => {
           <input
             disabled={disabled}
             type='submit'
-            className='button is-dark is-large'
+            className='button is-dark is-large is-oswald'
             value='Submit'
           />
-          {Object.keys((form || {})).length === 0 && <p className='contact-message has-text-primary'>All fields are required</p>}
+          {Object.keys((form || {})).length === 0 && <p className='contact-message has-text-primary'>*All fields are required</p>}
         </div>
       </div>
     </form>
